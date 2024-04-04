@@ -1,3 +1,5 @@
+@import "colors";
+
 .card {
   width: 17rem;
   height: 340px;
@@ -15,5 +17,17 @@
 
   img {
     height: 230px;
+  }
+
+  i {
+    font-size: 40px;
+    color: $quaternary;
+
+    &:hover {
+      background-color: $quaternary;
+      color: white;
+      border: solid 2px $quaternary;
+      border-radius: 4px;
+    }
   }
 }
