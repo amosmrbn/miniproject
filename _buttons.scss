@@ -1,0 +1,23 @@
+@import "colors";
+
+@mixin button {
+  background-color: $secondary;
+  border-color: $secondary;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-right: 50px;
+
+  &:hover {
+    color: white;
+    background-color: darken($secondary, 10%);
+    border: darken($secondary, 10%);
+  }
+
+  &:active {
+    background-color: $tertiary !important;
+    border-color: $tertiary !important;
+    color: white !important;
+  }
+}

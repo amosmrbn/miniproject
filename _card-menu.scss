@@ -1,0 +1,19 @@
+.card {
+  width: 17rem;
+  height: 340px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: #f3e7e775;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(146, 148, 154, 0.726);
+
+  &:hover {
+    transform: scale(1.05);
+    border: solid 2px white;
+  }
+
+  img {
+    height: 230px;
+  }
+}
