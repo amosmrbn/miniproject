@@ -5,9 +5,14 @@
 @import "card-menu";
 
 body {
-  background-color: $primary;
   width: 100%;
+  // .container {
+  background-color: $primary;
+  // }
 
+  a {
+    text-decoration: none;
+  }
   .box {
     width: 50%;
     margin-left: 8%;
@@ -38,17 +43,12 @@ body {
   }
 
   .btn-primary {
-    @include buttons.button;
+    @include buttons.btn-primary;
     font-family: $special-font;
   }
 
-  .btn-buy {
-    @include buttons.button;
-    color: white;
-  }
-
-  .btn-send {
-    @include buttons.button;
+  .btn-secondary {
+    @include buttons.btn-secondary;
   }
 
   .position-absolute {
@@ -115,6 +115,17 @@ body {
     font-size: 40px;
     margin-top: 90px;
     margin-bottom: 55px;
+  }
+
+  .social-icons {
+    svg {
+      color: $quaternary;
+      // width: ;
+    }
+  }
+
+  .invalid-feedback {
+    color: red;
   }
 }
 
@@ -188,8 +199,15 @@ body {
   }
 }
 
-footer {
-  text-align: center;
+.footer {
   background-color: $tertiary;
-  color: white;
+  padding: 30px 0;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1.6;
+  }
 }
