@@ -1,6 +1,6 @@
 @import "colors";
 
-@mixin button {
+@mixin btn-primary {
   background-color: $secondary;
   border-color: $secondary;
   border-top-left-radius: 15px;
@@ -12,6 +12,29 @@
   &:hover {
     color: white;
     background-color: darken($secondary, 10%);
+    border: darken($secondary, 10%);
+  }
+
+  &:active {
+    background-color: $tertiary !important;
+    border-color: $tertiary !important;
+    color: white !important;
+  }
+}
+
+@mixin btn-secondary {
+  background-color: $quaternary;
+  color: white;
+  border-color: $quaternary;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: auto;
+
+  &:hover {
+    color: white;
+    background-color: lighten($quaternary, 10%);
     border: darken($secondary, 10%);
   }
 
